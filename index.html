@@ -13,6 +13,7 @@
 </head>
 
 <body>
+    <!-- Bài tập 1 -->
    <div class="container">
     <div class="w50">
         <div class="row pt-5">
@@ -74,6 +75,107 @@
     </div>
     
    </div>
+   
+    <!-- Bài tập 2 -->
+
+   <div class="container">
+    <div class="w50">
+   <div class="row">
+    <div class="col">
+        <div class="form-group">
+            <input type="text" class="form-control" id="ten" placeholder="Nhập họ tên">
+          </div>
+    </div>
+    <div class="col">
+        <div class="form-group">
+            <input type="number" class="form-control" id="kw" placeholder="Nhập số Kw">
+          </div>
+    </div>
+    </div>
+    <button id="btnTiendien" tyle="button" class="btn btn-primary">Tính tiền điện</button>
+    <div class="form-group pt-3">
+       <span id="Tiendien"></span>
+    </div>
+    
+   </div>
+   </div>
+
+
+   <!-- Bài tập 3 -->
+   <div class="container">
+    <div class="w50">
+   <div class="row">
+    <div class="col">
+        <div class="form-group">
+            <input type="text" class="form-control" id="Hoten" placeholder="Nhập họ tên">
+          </div>
+    </div>
+    <div class="col">
+        <div class="form-group">
+            <input type="number" class="form-control" id="Thunhap" placeholder="Tổng thu nhập năm">
+          </div>
+    </div>
+    <div class="col">
+        <div class="form-group">
+            <input type="number" class="form-control" id="Songuoi" placeholder="Số người phụ thuộc">
+          </div>
+    </div>
+    </div>
+    <button id="btnTienthue" tyle="button" class="btn btn-primary">Tính tiền thuế</button>
+    <div class="form-group pt-3">
+       <span id="Tienthue"></span>
+    </div>
+    
+   </div>
+   </div>
+
+    <!-- Bài tập 4 -->
+
+    <div class="container">
+        <div class="w50">
+            <div class="row pt-5">
+                <div class="col">
+                    <div class="Khachhang">
+                        <form action="/action_page.php">
+                            <select id="Loaikhachhang" class="custom-select mb-3">
+                              <option selected >Chọn loại khách hàng</option>
+                              <option >Doanh Nghiệp</option>
+                              <option >Nhà Dân</option>
+                            </select>
+                          </form>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="form-group">
+                        <input type="text" class="form-control" id="MaKH" placeholder="Nhập mã khách hàng">
+                      </div>
+                </div>
+                <div class="col">
+                    <div class="form-group">
+                        <input type="number" class="form-control" id="Kenhcaocap" placeholder="SỐ kênh cao cấp">
+                      </div>
+                </div>
+            </div>
+            <div id="Mydiv" class="col3" style="display: none">
+                <div class="form-group">
+                    <input type="number" class="form-control" id="Ketnoi" placeholder="Số kết nối">
+                </div>
+            </div>
+           
+            <button id="btnTiencap" tyle="button" class="btn btn-primary">Tính tiền cáp</button>
+            
+            <div class="form-group pt-3">
+               <span id="cap"></span>
+            </div>
+            
+           
+        </div>
+        
+       </div>
+
+
+
+
   
 
 
@@ -93,6 +195,9 @@
         crossorigin="anonymous"></script>
 
     <script src="./js/TUYENSINH.js"></script>
+    <script src="./js/TINHTIENDIEN.js"></script>
+    <script src="./js/TINHTHUE.js"></script>
+    <script src="./js/TIENCAP.js"></script>
 </body>
 
 </html>
